@@ -7,7 +7,7 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects">
+    <section className="projects">
       <h2>Projects</h2>
       <ul>
         {projectList.map((project, index) => (

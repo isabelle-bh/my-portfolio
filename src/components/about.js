@@ -2,9 +2,14 @@ import React from 'react';
 
 const About = () => {
   return (
-    <section id="about">
-      <h2>About Me</h2>
-      <p>Hi, I'm Isabelle, a software engineering student passionate about building software solutions...</p>
+    <section className="about">
+      <h2 className="tagline">Learn more About Me!</h2>
+      <ul className="about-list">
+        <li><span>Hello, my name is Isabelle.</span></li>
+        <li><span>I am currently pursuing my software engineering degree at Western University!</span></li>
+        <li><span>I have touched on many different fields of SWE, including full stack web development, reinforcement learning in autonomous vehicles, game development, and more...</span></li>
+        <li><span>Some of my hobbies include art, reading, exercising, video games, and spending time with friends / family!</span></li>
+      </ul>
     </section>
   );
 };
