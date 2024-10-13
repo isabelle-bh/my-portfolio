@@ -1,4 +1,5 @@
 {
+  "homepage": "https://isabelle-bh.github.io/my-portfolio",
   "name": "digital-portfolio",
   "version": "0.1.0",
   "private": true,
@@ -7,15 +8,21 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.3.1",
+    "react-bootstrap-icons": "^1.11.4",
     "react-dom": "^18.3.1",
+    "react-on-screen": "^2.1.1",
+    "react-router-dom": "^6.27.0",
     "react-scripts": "5.0.1",
+    "sass": "^1.79.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -34,5 +41,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "gh-pages": "^6.2.0",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.13"
   }
 }
