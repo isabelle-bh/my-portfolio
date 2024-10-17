@@ -1,6 +1,8 @@
 # Welcome to Isabelle Beaudry's Portfolio Repository!
 
-This is a React app created by me! Feel free to browse around the repository.
+This is a React app created by me! It is a work in progress. 
+
+Feel free to browse around the repository!
 
 I am using Tailwind CSS for certain parts of my design. 
 
