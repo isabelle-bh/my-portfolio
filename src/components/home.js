@@ -53,7 +53,7 @@ const Home = () => {
                 <h1 className="">{`Hi, I'm Isabelle! I am a `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Software Engineering Student", "Web Developer", "Game Developer" ]'><span className="wrap">{text}</span></span></h1>
             </div>
             <div className="image-container">
-                <img src={logo}></img>
+              <a href="https://www.flowerpatch.com/march-birth-flowers-daffodil/" target="_blank"><img src={logo}></img></a>
             </div>
         </div>
     </section>
