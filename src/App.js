@@ -17,7 +17,7 @@ function App() {
         <Header />
         <main>
           <Routes>
-            <Route path='/my-portfolio/home' element={<Home />} />
+            <Route path='/my-portfolio' element={<Home />} />
             <Route path='/my-portfolio/about' element={<About />} />
             <Route path='/my-portfolio/projects' element={<Projects />} />
             <Route path='/my-portfolio/resume' element={<Resume />} />
