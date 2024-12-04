@@ -11,6 +11,7 @@ const Footer = () => {
           href="https://www.linkedin.com/in/isabelle-beaudry/"
           data-tooltip-target="tooltip-linkedin"
           className="inline-flex justify-center p-2 text-gray-500 rounded-lg cursor-pointer dark:text-gray-400 dark:hover:text-white hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-600"
+          target="_blank"
         >
           <svg
             className="w-5 h-5"
@@ -26,6 +27,7 @@ const Footer = () => {
           href="https://github.com/isabelle-bh"
           data-tooltip-target="tooltip-github"
           className="inline-flex justify-center p-2 text-gray-500 rounded-lg cursor-pointer dark:text-gray-400 dark:hover:text-white hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-600"
+          target="_blank"
         >
           <svg
             className="w-5 h-5"
