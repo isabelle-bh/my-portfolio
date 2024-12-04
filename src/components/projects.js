@@ -6,13 +6,13 @@ const Projects = () => {
     {
       name: "Eclipse Game",
       description:
-        "A 2D Adventure Platformer, Eclipse! The goal is to reach the end of the level as fast as you can, defeating enemies along the way. Made using Unity / C#. Credits to all assets / tutorials used can be found in the README.",
+        "A 2D Adventure Platformer, Eclipse! The goal is to reach the end of the level as fast as you can, defeating enemies along the way. Solo project made using Unity / C#. Credits to all assets / tutorials used can be found in the README.",
       link: "https://github.com/isabelle-bh/Eclipse-2D-Platformer",
     },
     {
       name: "Superhero Database",
       description:
-        "A full stack MERN superhero database application with login/signup, admin, user management, list creation functionalities, and more.",
+        "A full stack superhero database application with login/signup, admin, user management, list creation functionalities, and more. Solo project made using MongoDB, Express, React, and Node.",
       link: "https://github.com/isabelle-bh/Superhero-Database",
     },
   ];
@@ -26,26 +26,26 @@ const Projects = () => {
     {
       name: "Strawberry Fields",
       description:
-        "A top down 2D adventure game where the player takes on the role of a witch who must navigate through the forest to find the ingredients needed to create a potion to save her village. Made using Unity / C#.",
+        "A top down 2D adventure game where the player takes on the role of a witch who must navigate through the forest to find the ingredients needed to create a potion to save her village. Team project made using Unity / C#.",
       link: "https://github.com/isabelle-bh/StrawberryShores",
     },
     {
       name: "Women in Science UWO Website",
       description:
-        "An interactive React website for the Women in Science club at Western University. Uses React, HTML, CSS, and JavaScript.",
+        "An interactive React website for the Women in Science club at Western University. Team project made using React, HTML, CSS, and JavaScript.",
       link: "https://github.com/wisuwo/wis",
       website: "https://www.wisuwo.com",
     },
     {
       name: "Smart Plant Care System",
       description:
-        "A smart plant care system that autonomously monitors and manages the watering, light exposure, and nutrient levels of the houseplants, ensuring optimal growth conditions and minimizing human intervention. Made using C.",
+        "Worked in a team to design a smart plant care system that autonomously monitors and manages the watering, light exposure, and nutrient levels of the houseplants, ensuring optimal growth conditions and minimizing human intervention. Team project made using C.",
       link: "https://github.com/isabelle-bh/Smart-Plant-Care-System",
     },
     {
       name: "Immortal Garden RPG",
       description:
-        "The Immortal Garden RPG. The game is set in a medieval world where the player takes on the role of a king/queen who must defend their castle of which is under siege. The castle is known for its beautiful garden, Eden’s Orchard, which contains a rare and valuable tree that produces apples of immortality, “The Tree of Immortality”. Made using Pygame / Python.",
+        "The Immortal Garden RPG. The game is set in a medieval world where the player takes on the role of a king/queen who must defend their castle of which is under siege. The castle is known for its beautiful garden, Eden’s Orchard, which contains a rare and valuable tree that produces apples of immortality, “The Tree of Immortality”. Team project made using Pygame / Python.",
       link: "https://github.com/isabelle-bh/SE2250_TeamProject",
     },
   ];
