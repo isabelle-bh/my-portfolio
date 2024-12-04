@@ -1,5 +1,5 @@
 import React from 'react';
-import myResume from "../assets/myresume.pdf"; 
+import myResume from "../assets/Isabelle-Beaudry-Resume-24.pdf"; 
 
 const Resume = () => {
   return (
