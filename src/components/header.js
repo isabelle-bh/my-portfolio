@@ -6,12 +6,12 @@ const Header = () => {
   return (
     <header className=" text-white p-4">
       <nav className="flex justify-between">
-        <NavLink to="/my-portfolio">
+        <NavLink to="/my-portfolio/">
           <img className="logo" src={logo}></img>
         </NavLink>      
         <div className="space-x-4">
           <NavLink 
-            to="/my-portfolio" 
+            to="/my-portfolio/" 
             className={({ isActive }) => (isActive ? 'font-bold text-blue-500' : 'text-white')} 
             end
           >
