@@ -21,7 +21,6 @@ function App() {
             <Route path='/my-portfolio/about' element={<About />} />
             <Route path='/my-portfolio/projects' element={<Projects />} />
             <Route path='/my-portfolio/resume' element={<Resume />} />
-            <Route path='/my-portfolio/contact' element={<Contact />} />
           </Routes>
         </main>
         <Footer />

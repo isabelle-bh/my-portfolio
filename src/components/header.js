@@ -20,7 +20,6 @@ const Header = () => {
           <NavLink to="/my-portfolio/about" className={({ isActive }) => isActive ? 'font-bold text-blue-500' : 'text-white'}>About</NavLink>
           <NavLink to="/my-portfolio/projects" className={({ isActive }) => isActive ? 'font-bold text-blue-500' : 'text-white'}>Projects</NavLink>
           <NavLink to="/my-portfolio/resume" className={({ isActive }) => isActive ? 'font-bold text-blue-500' : 'text-white'}>Resume</NavLink>
-          <NavLink to="/my-portfolio/contact" className={({ isActive }) => isActive ? 'font-bold text-blue-500' : 'text-white'}>Contact</NavLink>
         </div>
       </nav>
     </header>
