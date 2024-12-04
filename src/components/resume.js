@@ -9,7 +9,7 @@ const Resume = () => {
         <embed
           src={myResume}
           type="application/pdf"
-          width="80%"
+          width="60%"
           height="600px"
           style={{ display: "block", margin: "0 auto" }}
         />

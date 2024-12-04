@@ -7,7 +7,7 @@ const Home = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
     const [text, setText] = useState('');
-    const [delta, setDelta] = useState(300 - Math.random() * 100);
+    const [delta, setDelta] = useState(200 - Math.random() * 100);
     const [index, setIndex] = useState(1);
     const toRotate = [ "Software Engineering Student", "Web Developer", "Game Developer" ];
     const period = 2000;
@@ -39,7 +39,7 @@ const Home = () => {
           setIsDeleting(false);
           setLoopNum(loopNum + 1);
           setIndex(1);
-          setDelta(500);
+          setDelta(200);
         } else {
           setIndex(prevIndex => prevIndex + 1);
         }
