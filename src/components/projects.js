@@ -26,7 +26,7 @@ const Projects = () => {
     {
       name: "Strawberry Fields",
       description:
-        "A top down 2D adventure game where the player takes on the role of a witch who must navigate through the forest to find the ingredients needed to create a potion to save her village. Team project made using Unity / C#.",
+        "This is a 2D adventure RPG which takes place in a village called Strawberry Shores. It combines both puzzle and combat elements for an enjoyable experience. The player must complete a series of quests given to them by the village Wizard in order to save the village from a terrible fate. Team project made using Unity / C#.",
       link: "https://github.com/isabelle-bh/StrawberryShores",
     },
     {
