@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="mt-auto shadow p-4 sm:p-6 xl:p-8 dark:bg-gray-800 antialiased text-center">
       <p className="mb-4 text-sm text-gray-500 dark:text-gray-400">
-        &copy; 2024 Isabelle Beaudry Hajji. All rights reserved.
+        &copy; 2024 Isabelle Beaudry Hajji. Created using React. All rights reserved.
       </p>
       <div className="flex justify-center items-center space-x-4">
         <a

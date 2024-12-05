@@ -53,6 +53,34 @@ h4 {
   font-weight: bold;
 }
 
+/* HEADER */
+.nav-links {
+  background-color: #1a1a1a; /* Matches your site's theme */
+  position: absolute; /* For dropdown positioning */
+  top: 100%; /* Below the navbar */
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  text-align: center;
+  z-index: 1000;
+}
+
+.hamburger {
+  cursor: pointer;
+}
+
+/* Media Queries for Larger Screens */
+@media (min-width: 768px) {
+  .nav-links {
+    position: static; /* Inline links on larger screens */
+    padding: 0;
+    background-color: transparent;
+    display: flex !important;
+    text-align: left;
+  }
+}
+
+
 /* HOME SECTION */
 
 .home {
@@ -62,6 +90,10 @@ h4 {
   font-size: 50px;
   margin-left: 40px;
   font-weight: bold;
+}
+
+.home .tagline {
+  font-size: 32px;
 }
 
 
