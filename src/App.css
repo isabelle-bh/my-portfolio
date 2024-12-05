@@ -34,8 +34,10 @@ a:hover {
   font-weight: bold;
 }
 
-.home, .about, .projects, .contact {
-  margin-left: 40px;
+@media screen and (max-width: 768px) {
+  .home, .about, .projects, .resume {
+    margin: 10px 12px !important;
+  }
 }
 
 h2 {
@@ -54,35 +56,46 @@ h4 {
 }
 
 /* HEADER */
-.nav-links {
-  background-color: #1a1a1a; /* Matches your site's theme */
-  position: absolute; /* For dropdown positioning */
-  top: 100%; /* Below the navbar */
-  left: 0;
-  right: 0;
-  padding: 1rem;
-  text-align: center;
-  z-index: 1000;
+
+.desktop-nav {
+  display: flex;
+  gap: 1rem;
 }
 
-.hamburger {
-  cursor: pointer;
+.logo-container {
+  display: block;
 }
 
-/* Media Queries for Larger Screens */
-@media (min-width: 768px) {
-  .nav-links {
-    position: static; /* Inline links on larger screens */
-    padding: 0;
-    background-color: transparent;
-    display: flex !important;
-    text-align: left;
+.logo {
+  max-width: 150px;
+}
+
+@media screen and (max-width: 768px) {
+  .logo-container {
+    display: none;
+  }
+
+  .desktop-nav {
+    display: none; 
+  }
+
+  .mobile-nav {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .mobile-nav hr {
+    margin-top: 20px; 
+    width: 80%; 
+    border: 1px solid #fff;
   }
 }
 
-
 /* HOME SECTION */
-
 .home {
   display: flex;
   align-items: center;
@@ -96,15 +109,16 @@ h4 {
   font-size: 32px;
 }
 
-
 .home .content {
   display: flex; 
   width: 100%;
+  flex-direction: row;
 }
 
 .home .text-container {
   margin-right: auto;
   width: 40%;
+  text-align: left;
 }
 
 .home .image-container {
@@ -122,11 +136,55 @@ h4 {
   object-position: center;
 }
 
-/* ABOUT SECTION */
+@media screen and (max-width: 768px) {
+  .home {
+    font-size: 32px; 
+    text-align: center;
+    padding: 20px 10px;
+  }
+
+  .home .content {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .home .text-container {
+    width: 80%;
+    margin-right: 0 !important;
+    text-align: center;
+  }
+
+  
+  .home .image-container {
+    width: 90%; 
+    height: 300px;
+    margin: 0;
+
+  }
+
+  .home .image-container img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    object-position: center;
+  }
+
+  .home .tagline {
+    font-size: 24px; 
+  }
+
+  .home h1 {
+    font-size: 40px; 
+  }
+}
+
+
+/* ABOUT */
 .about {
   display: flex;
   justify-content: center; 
-  flex-direction: column;
+  flex-direction: column; 
   width: 50%;
   font-size: 23px;
   margin: 0 auto;
@@ -150,10 +208,10 @@ h4 {
 }
 
 .about .image-container {
-  width: 1100px;
-  height: 400px; 
+  width: 100%; 
+  height: 325px; 
   overflow: hidden; 
-  margin-right: 20px;
+  margin-bottom: 20px; 
   border-radius: 5%;
 }
 
@@ -165,10 +223,48 @@ h4 {
 }
 
 .text-container {
-  flex-grow: 1; 
+  flex-grow: 1;
+  margin-bottom: 20px; 
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    width: 95%; 
+    font-size: 18px; 
+    padding: 20px;
+  }
+
+
+  .about-content {
+    flex-direction: column; 
+    text-align: center;
+
+  }
+
+  .about .image-container {
+    width: 90%;
+    height: 350px; 
+  }
+
+  .about .about-list {
+    margin-left: 0;
+    text-align: center;
+    list-style-type: none;
+  }
+
+  .about .about-list li {
+    margin-bottom: 10px; 
+  }
+  .about li span {
+    left: 0px;
+  }
 }
 
 /* PROJECTS SECTION */
+
+.projects {
+  padding:20px;
+}
 
 .tagline {
   text-align: center;
@@ -235,6 +331,39 @@ h4 {
 .project-details a:hover {
   text-decoration: underline;
 } 
+
+/* RESUME */
+.resume {
+  padding: 20px;
+  text-align: center;
+}
+
+.resume .tagline {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.resume-content {
+  margin-top: 20px;
+}
+
+/* Mobile View */
+@media screen and (max-width: 768px) {
+  .resume-content {
+    width: 90%;  /* Ensure it's not too wide */
+    margin: 0 auto;
+  }
+
+  .resume-content embed {
+    width: 100% !important; /* Make the object tag responsive */
+    height: 400px; /* Adjust the height on mobile */
+  }
+
+  .resume .tagline {
+    font-size: 40px;
+  }
+}
+
 
 .logo {
   height: 50px;
