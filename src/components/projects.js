@@ -21,7 +21,7 @@ const Projects = () => {
     {
       name: "STELLA",
       description:
-        "STELLA stands for Simulated Training Environments and Large Learning Autonoma. STELLA is an implementation of an autonomous driving agent trained in simulations. The project will adapt recent techniques into a usable framework and tools for others to adapt and use. This is my group's capstone project and is currently a work in progress!",
+        "STELLA stands for Simulated Training Environments and Large Learning Automata. STELLA is an implementation of an autonomous driving agent trained in simulations. The project will adapt recent techniques into a usable framework and tools for others to adapt and use. This is my group's capstone project and is currently a work in progress!",
     },
     {
       name: "Strawberry Fields",
