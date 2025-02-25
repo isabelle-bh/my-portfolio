@@ -131,7 +131,7 @@ const Projects = () => {
 
   return (
     <section className="projects">
-      <h2 className="tagline">Here are my Individual and Group Projects.</h2>
+      <h2 className="tagline">my solo and group projects!</h2>
       {renderProjectList(groupProjectList, individualProjectList.length)}
       {renderProjectList(individualProjectList, 0)}
     </section>

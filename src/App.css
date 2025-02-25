@@ -1,12 +1,32 @@
 .App {
-  background: #4b6cb7;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
-    
+  background: #09122C;
+}
+
+.app-container {
+  margin: 50px 100px;
+  display: flex;
+  flex-direction: column;
+  min-height: 90vh; /* Ensures it takes the full viewport height */
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.non-footer {
+  flex: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .app-container {
+    margin: 20px 12px !important;
+  }
 }
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: "Space Grotesk", serif;
   margin: 0;
   padding: 0;
   color: white;
@@ -14,7 +34,7 @@ body {
 
 header {
   font-size: 30px;
-  margin: 15px 30px;
+  margin-bottom: 50px;
 }
 
 a:active {
@@ -29,15 +49,17 @@ a:hover {
   color: #ee73f4;
 }
 
-.tagline {
-  font-style: italic;
-  font-weight: bold;
-}
-
 @media screen and (max-width: 768px) {
   .home, .about, .projects, .resume {
     margin: 10px 12px !important;
   }
+}
+
+.tagline {
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 h2 {
@@ -57,41 +79,52 @@ h4 {
 
 /* HEADER */
 
-.desktop-nav {
+.header .desktop-nav {
   display: flex;
   gap: 1rem;
 }
 
-.logo-container {
+.header .logo-container {
   display: block;
+  font-style: italic;
 }
 
-.logo {
+.header .logo {
   max-width: 150px;
 }
 
+.header svg {
+  width: 40px;
+  height: 40px;
+}
+
 @media screen and (max-width: 768px) {
-  .logo-container {
+  .header .logo-container {
     display: none;
   }
 
-  .desktop-nav {
+  .header .desktop-nav {
     display: none; 
   }
 
-  .mobile-nav {
+  .header .mobile-nav {
     display: flex; 
     flex-direction: column; 
     align-items: center; 
     justify-content: center; 
     gap: 1rem;
     width: 100%;
+    margin-top: 20px;
   }
 
-  .mobile-nav hr {
+  .header .mobile-nav hr {
     margin-top: 20px; 
     width: 80%; 
     border: 1px solid #fff;
+  }
+  .header svg {
+    width: 40px;
+    height: 40px;
   }
 }
 
@@ -101,7 +134,6 @@ h4 {
   align-items: center;
   justify-content: center;
   font-size: 50px;
-  margin-left: 40px;
   font-weight: bold;
 }
 
@@ -126,8 +158,6 @@ h4 {
   height: 450px; 
   overflow: hidden; 
   margin-left: 70px;
-  margin-right: 40px;
-  border-radius: 3%; 
 }
 
 .home .image-container img {
@@ -186,7 +216,7 @@ h4 {
   justify-content: center; 
   flex-direction: column; 
   width: 60%;
-  font-size: 23px;
+  font-size: 21px;
   margin: 0 auto;
 }
 
@@ -212,8 +242,8 @@ h4 {
 }
 
 .about .image-container {
-  width: 100%; 
-  height: 370px; 
+  width: 30%; 
+  height: 300px; 
   overflow: hidden; 
   margin-bottom: 20px; 
   padding-right: 20px;
@@ -227,6 +257,7 @@ h4 {
 }
 
 .text-container {
+  width: 70%;
   flex-grow: 1;
   margin-bottom: 20px; 
 }
@@ -235,7 +266,6 @@ h4 {
   .about {
     width: 95%; 
     font-size: 18px; 
-    padding: 20px;
   }
 
   .about-content {
@@ -246,12 +276,16 @@ h4 {
   .about .image-container {
     width: 90%;
     height: 350px; 
+    margin-bottom: 40px;
+    padding-right: 0;
   }
 
   .about .about-list {
     margin-left: 0;
-    text-align: center;
     list-style-type: none;
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
   }
 
   .about .about-list li {
@@ -265,12 +299,6 @@ h4 {
 /* PROJECTS SECTION */
 
 .projects {
-  padding:20px;
-}
-
-.tagline {
-  text-align: center;
-  margin-bottom: 20px;
 }
 
 .project-grid {
@@ -329,20 +357,12 @@ h4 {
   transform: scale(1.1);
 }
 
-
 .project-details a:hover {
   text-decoration: underline;
 } 
 
 /* RESUME */
 .resume {
-  padding: 20px;
-  text-align: center;
-}
-
-.resume .tagline {
-  font-size: 32px;
-  font-weight: bold;
 }
 
 .resume-content {
@@ -366,13 +386,10 @@ h4 {
   }
 }
 
-
 .logo {
   height: 50px;
 }
 
-.varela-round-regular {
-  font-family: "Varela Round", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+footer {
+  padding-bottom: 0px !important;
 }

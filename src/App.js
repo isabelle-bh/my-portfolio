@@ -14,16 +14,21 @@ function App() {
   return (
     <Router>
       <div className="App flex flex-col min-h-screen varela-round-regular">
-        <Header />
-        <main>
-          <Routes>
-            <Route path='/my-portfolio/' element={<Home />} />
-            <Route path='/my-portfolio/about' element={<About />} />
-            <Route path='/my-portfolio/projects' element={<Projects />} />
-            <Route path='/my-portfolio/resume' element={<Resume />} />
-          </Routes>
-        </main>
+        <div className="app-container">
+          <div className="non-footer">
+            <Header />
+              <main>
+                  <Routes>
+                    <Route path='/my-portfolio/' element={<Home />} />
+                    <Route path='/my-portfolio/about' element={<About />} />
+                    <Route path='/my-portfolio/projects' element={<Projects />} />
+                    <Route path='/my-portfolio/resume' element={<Resume />} />
+                    <Route path='/my-portfolio/contact' element={<Contact />} />
+                  </Routes>
+              </main>
+          </div>
         <Footer />
+        </div>
       </div>
     </Router>
   );

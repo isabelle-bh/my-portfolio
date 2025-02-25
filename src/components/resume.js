@@ -11,12 +11,12 @@ const Resume = () => {
 
   return (
     <section className="resume">
-      <h2 className="tagline">Check out my resume and experience.</h2>
+      <h2 className="tagline">check out my resume and experience!</h2>
       <div className="resume-content">
         {isError ? (
           <div>
-            <p>Sorry, we were unable to load the resume. 
-               You can <a href={myResume} target="_blank" rel="noopener noreferrer">view the resume here</a>.</p>
+            <p>Sorry, my resume is not loading right now. 
+               You can <a href={myResume} target="_blank" rel="noopener noreferrer">view it here</a>.</p>
           </div>
         ) : (
           <embed

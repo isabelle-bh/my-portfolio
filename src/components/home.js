@@ -1,6 +1,5 @@
 import React from 'react';
 import { useState, useEffect } from "react";
-import { Container, Row, Col } from "react-bootstrap";
 import logo from "../assets/f1.jpeg";
 
 const Home = () => {
@@ -9,7 +8,7 @@ const Home = () => {
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(200 - Math.random() * 100);
     const [index, setIndex] = useState(1);
-    const toRotate = [ "Software Engineering Student", "Web Developer", "Game Developer" ];
+    const toRotate = [ "software engineering student", "web developer", "game developer" ];
     const period = 2000;
 
     useEffect(() => {
@@ -49,8 +48,8 @@ const Home = () => {
     <section className="home" id="home">
         <div className="content">
             <div className="text-container">
-                <span className="tagline">Welcome to my portfolio.</span>
-                <h1 className="">{`Hi, I'm Isabelle! I am a `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Software Engineering Student", "Web Developer", "Game Developer" ]'><span className="wrap">{text}</span></span></h1>
+                <span className="tagline">welcome to my portfolio!</span>
+                <h1 className="">{`hi, my name is Isabelle. I am a `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Software Engineering Student", "Web Developer", "Game Developer" ]'><span className="wrap">{text}</span></span></h1>
             </div>
             <div className="image-container">
               <img src={logo}></img>
