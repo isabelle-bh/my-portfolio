@@ -49,6 +49,18 @@ a:hover {
   color: #ee73f4;
 }
 
+button:active {
+  background: #ee73f4 !important;
+}
+
+button {
+  transition: background-color 0.4s ease, color 0.2s ease;
+}
+
+button:hover {
+  background: #ee73f4 !important;
+}
+
 @media screen and (max-width: 768px) {
   .home, .about, .projects, .resume {
     margin: 10px 12px !important;
@@ -314,7 +326,6 @@ h4 {
   margin: 0 auto;
 }
 
-
 .project-card h4 {
   margin: 0;
   transition: color 0.3s ease;
@@ -383,6 +394,80 @@ h4 {
 
   .resume .tagline {
     font-size: 40px;
+  }
+}
+
+/* CONTACT */
+
+.contact input, .contact textarea {
+  color: black;
+}
+
+.contact p {
+  text-align: center;
+}
+
+.contact .contact-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  width: 90%;
+}
+
+.contact .form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.contact .input-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.contact .input-row input {
+  flex: 1; /* Make both inputs equal width */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.contact button {
+  padding: 10px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-style: italic;
+}
+
+.contact .button {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .contact .contact-container {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .contact .input-row {
+    flex-direction: column; /* Stack inputs on smaller screens */
+    gap: 10px;
+
   }
 }
 
