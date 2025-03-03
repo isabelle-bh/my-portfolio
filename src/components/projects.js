@@ -4,17 +4,17 @@ import { motion } from "framer-motion";
 const Projects = () => {
   const individualProjectList = [
     {
+      name: "Superhero Database",
+      description:
+        "A full stack superhero database application with login/signup, admin, user management, list creation functionalities, and more. Solo project made using JavaScript, HTML + CSS, MongoDB, Express, React, and Node.",
+      link: "https://github.com/isabelle-bh/Superhero-Database",
+    },
+    {
       name: "Eclipse Game",
       description:
         "A 2D Adventure Platformer, Eclipse! The goal is to reach the end of the level as fast as you can, defeating enemies along the way. Solo project made using Unity / C#. Credits to all assets / tutorials used can be found in the README.",
       link: "https://github.com/isabelle-bh/Eclipse-2D-Platformer",
-    },
-    {
-      name: "Superhero Database",
-      description:
-        "A full stack superhero database application with login/signup, admin, user management, list creation functionalities, and more. Solo project made using MongoDB, Express, React, and Node.",
-      link: "https://github.com/isabelle-bh/Superhero-Database",
-    },
+    }
   ];
 
   const groupProjectList = [
@@ -24,17 +24,17 @@ const Projects = () => {
         "STELLA stands for Simulated Training Environments and Large Learning Automata. STELLA is an implementation of an autonomous driving agent trained in simulations. The project will adapt recent techniques into a usable framework and tools for others to adapt and use. This is my group's capstone project and is currently a work in progress!",
     },
     {
-      name: "Strawberry Fields",
-      description:
-        "This is a 2D adventure RPG which takes place in a village called Strawberry Shores. It combines both puzzle and combat elements for an enjoyable experience. The player must complete a series of quests given to them by the village Wizard in order to save the village from a terrible fate. Team project made using Unity / C#.",
-      link: "https://github.com/isabelle-bh/StrawberryShores",
-    },
-    {
       name: "Women in Science UWO Website",
       description:
         "An interactive React website for the Women in Science club at Western University. Team project made using React, HTML, CSS, and JavaScript.",
       link: "https://github.com/wisuwo/wis",
       website: "https://www.wisuwo.com",
+    },
+    {
+      name: "Strawberry Fields",
+      description:
+        "This is a 2D adventure RPG which takes place in a village called Strawberry Shores. It combines both puzzle and combat elements for an enjoyable experience. The player must complete a series of quests given to them by the village Wizard in order to save the village from a terrible fate. Team project made using Unity / C#. Credits to all assets / tutorials used can be found in the README.",
+      link: "https://github.com/isabelle-bh/StrawberryShores",
     },
     {
       name: "Smart Plant Care System",
