@@ -19,9 +19,9 @@ const Projects = () => {
 
   const groupProjectList = [
     {
-      name: "STELLA",
+      name: "Simulated Training Environments and Large Learning Automata (STELLA)",
       description:
-        "STELLA stands for Simulated Training Environments and Large Learning Automata. STELLA is an implementation of an autonomous driving agent trained in simulations. The project will adapt recent techniques into a usable framework and tools for others to adapt and use. This is my group's capstone project and is currently a work in progress!",
+      "STELLA is an autonomous driving project which demonstrates the application of simulation environments as a testing ground for imitation learning autonomous agents. Part of the work reproduces and validates the current state of the art model in simulation agents, Transfuser++, then proposes modifications in an attempt to improve its results. We run all agents in the CARLA simulator, which has an expansive community of tests, benchmarks, and agents. Evaluation is performed with the CARLA Leaderboard 2.0 framework, which sets updated standards on route completion, infractions, and minimum speed. Additionally, the project contributes to the open source community by adapting and improving existing tools in autonomous driving.",
     },
     {
       name: "Women in Science UWO Website",
