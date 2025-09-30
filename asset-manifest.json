@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.c9725c9e.css",
-    "main.js": "/my-portfolio/static/js/main.84805b16.js",
+    "main.css": "/my-portfolio/static/css/main.869ff6de.css",
+    "main.js": "/my-portfolio/static/js/main.1b85450a.js",
     "static/js/453.227f349f.chunk.js": "/my-portfolio/static/js/453.227f349f.chunk.js",
-    "static/media/isa1.jpg": "/my-portfolio/static/media/isa1.4178000f59cdbd5d0853.jpg",
+    "static/media/isa1.jpg": "/my-portfolio/static/media/isa1.67230de2b8b29c23f7dc.jpg",
     "static/media/f1.jpeg": "/my-portfolio/static/media/f1.6e7b57ca30e3cd248832.jpeg",
-    "static/media/IsabelleBeaudry-Resume-2025.pdf": "/my-portfolio/static/media/IsabelleBeaudry-Resume-2025.f50052a0bee3b0f867e4.pdf",
+    "static/media/IsabelleBeaudry_Resume2025.pdf": "/my-portfolio/static/media/IsabelleBeaudry_Resume2025.5f34884ec27706ce3481.pdf",
     "index.html": "/my-portfolio/index.html",
-    "main.c9725c9e.css.map": "/my-portfolio/static/css/main.c9725c9e.css.map",
-    "main.84805b16.js.map": "/my-portfolio/static/js/main.84805b16.js.map",
+    "main.869ff6de.css.map": "/my-portfolio/static/css/main.869ff6de.css.map",
+    "main.1b85450a.js.map": "/my-portfolio/static/js/main.1b85450a.js.map",
     "453.227f349f.chunk.js.map": "/my-portfolio/static/js/453.227f349f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c9725c9e.css",
-    "static/js/main.84805b16.js"
+    "static/css/main.869ff6de.css",
+    "static/js/main.1b85450a.js"
   ]
 }
