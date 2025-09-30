@@ -11,9 +11,10 @@ const About = () => {
         </div>
         <div className="text-container">
           <ul className="about-list">
-            <li><span>My name is Isabelle. I am currently pursuing my software engineering degree at Western University.</span></li>
-            <li><span>I have worked on projects in many different areas of software engineering, including full stack web development, machine learning and autonomous systems, game development, and more.</span></li>
-            <li><span>Some of my personal hobbies include Formula 1, drawing and reading, skiing, yoga, video games, and spending time with friends / family!</span></li>
+            <li><span>My name is Isabelle. I have recently graduated with a Bachelors in Engineering Science, majoring in Software engineering.</span></li>
+            <li><span>I have worked on projects in many different areas of software engineering, including full stack web development, game development, iOS app development, machine learning and autonomous systems, and more.</span></li>
+            <li><span>I currently work as a web developer at a small company, and I am simultaneously volunteering for Toronto Climate Week as a web developer.</span></li>
+            <li><span>Some of my passions include Formula 1, drawing, reading, yoga, video games, and spending time with friends / family!</span></li>
           </ul>
         </div>
       </div>
