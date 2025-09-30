@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import myResume from "../assets/IsabelleBeaudry-Resume-2025.pdf"; 
+import myResume from "../assets/IsabelleBeaudry_Resume2025.pdf"; 
 
 const Resume = () => {
   const [isError, setIsError] = useState(false);
