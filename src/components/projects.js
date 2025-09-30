@@ -2,7 +2,30 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 const Projects = () => {
-  const individualProjectList = [
+  const projectList = [
+    {
+      name: "Circuit Sync",
+      description: "An iOS app built with SwiftUI that syncs live Formula 1 race data from the OpenF1 API, giving fans an easy way to track circuits, race dates, and details in one place.",
+      link: "https://github.com/isabelle-bh/CircuitSync"
+    },
+    {
+      name: "Sky Courier",
+      description: "A casual Unity game that combines playful 3D visuals and motivational quotes. Players click on a rotating planet to send out a plane that flies towards the player, delivers an uplifting message, and then returns to the planet once dismissed. Features a world-space main menu, smooth camera transitions, lofi-music player, and randomized quotes.",
+      link: "https://github.com/isabelle-bh/Sky-Courier"
+    },
+    {
+      name: "Simulated Training Environments and Large Learning Automata (STELLA)",
+      description:
+      "STELLA is an autonomous driving project which demonstrates the application of simulation environments as a testing ground for imitation learning autonomous agents. Part of the work reproduces and validates the current state of the art model in simulation agents, Transfuser++, then proposes modifications in an attempt to improve its results. We run all agents in the CARLA simulator, which has an expansive community of tests, benchmarks, and agents. Evaluation is performed with the CARLA Leaderboard 2.0 framework, which sets updated standards on route completion, infractions, and minimum speed. Additionally, the project contributes to the open source community by adapting and improving existing tools in autonomous driving.",
+      link: "https://github.com/isabelle-bh/STELLA"
+    },
+    {
+      name: "Women in Science UWO Website",
+      description:
+        "An interactive React website for the Women in Science club at Western University. Team project made using React, HTML, CSS, and JavaScript.",
+      link: "https://github.com/wisuwo/wis",
+      website: "https://www.wisuwo.com",
+    },
     {
       name: "Superhero Database",
       description:
@@ -14,21 +37,6 @@ const Projects = () => {
       description:
         "A 2D Adventure Platformer, Eclipse! The goal is to reach the end of the level as fast as you can, defeating enemies along the way. Solo project made using Unity / C#. Credits to all assets / tutorials used can be found in the README.",
       link: "https://github.com/isabelle-bh/Eclipse-2D-Platformer",
-    }
-  ];
-
-  const groupProjectList = [
-    {
-      name: "Simulated Training Environments and Large Learning Automata (STELLA)",
-      description:
-      "STELLA is an autonomous driving project which demonstrates the application of simulation environments as a testing ground for imitation learning autonomous agents. Part of the work reproduces and validates the current state of the art model in simulation agents, Transfuser++, then proposes modifications in an attempt to improve its results. We run all agents in the CARLA simulator, which has an expansive community of tests, benchmarks, and agents. Evaluation is performed with the CARLA Leaderboard 2.0 framework, which sets updated standards on route completion, infractions, and minimum speed. Additionally, the project contributes to the open source community by adapting and improving existing tools in autonomous driving.",
-    },
-    {
-      name: "Women in Science UWO Website",
-      description:
-        "An interactive React website for the Women in Science club at Western University. Team project made using React, HTML, CSS, and JavaScript.",
-      link: "https://github.com/wisuwo/wis",
-      website: "https://www.wisuwo.com",
     },
     {
       name: "Strawberry Fields",
@@ -41,13 +49,7 @@ const Projects = () => {
       description:
         "Worked in a team to design a smart plant care system that autonomously monitors and manages the watering, light exposure, and nutrient levels of the houseplants, ensuring optimal growth conditions and minimizing human intervention. Team project made using C.",
       link: "https://github.com/isabelle-bh/Smart-Plant-Care-System",
-    },
-    {
-      name: "Immortal Garden RPG",
-      description:
-        "The Immortal Garden RPG. The game is set in a medieval world where the player takes on the role of a king/queen who must defend their castle of which is under siege. The castle is known for its beautiful garden, Eden’s Orchard, which contains a rare and valuable tree that produces apples of immortality, “The Tree of Immortality”. Team project made using Pygame / Python.",
-      link: "https://github.com/isabelle-bh/SE2250_TeamProject",
-    },
+    }
   ];
 
   const [expandedProject, setExpandedProject] = useState(null);
@@ -132,8 +134,7 @@ const Projects = () => {
   return (
     <section className="projects">
       <h2 className="tagline">my solo and group projects!</h2>
-      {renderProjectList(groupProjectList, individualProjectList.length)}
-      {renderProjectList(individualProjectList, 0)}
+      {renderProjectList(projectList, 0)}
     </section>
   );
 };
