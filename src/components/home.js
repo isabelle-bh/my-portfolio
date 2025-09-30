@@ -23,7 +23,7 @@ const Home = () => {
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(200 - Math.random() * 100);
     const [index, setIndex] = useState(1);
-    const toRotate = [ "software engineering new graduate", "web developer", "iOS app developer", "unity game developer" ];
+    const toRotate = [ "a software engineering new graduate", "a web developer", "an iOS app developer", "a unity game developer" ];
     const period = 2000;
     
     useEffect(() => {
@@ -64,8 +64,8 @@ const Home = () => {
     <section className="home" id="home">
         <div className="content">
             <div className="text-container">
-                <span className="tagline" data-reflect>HI, I'M ISABELLE!</span>
-                <h1 className="">{`I am a `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Software Engineering New Graduate", "Web Developer", "iOS App Developer", "Unity Game Developer" ]'><span className="wrap">{text}</span></span></h1>
+                <span className="tagline" data-reflect>My name is Isabelle!</span>
+                <h1 className="">{`I am `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "a Software Engineering New Graduate", "a Web Developer", "an iOS App Developer", "a Unity Game Developer" ]'><span className="wrap">{text}</span></span></h1>
             </div>
             <div className="image-container">
               <img src={logo}></img>
