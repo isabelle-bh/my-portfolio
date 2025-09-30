@@ -70,7 +70,6 @@ export const Contact = (props) => {
         </div>
         <div className="form-container">
           <form name="sentMessage" validate onSubmit={handleSubmit}>
-            {/* Name & Email side by side */}
             <div className="input-row">
               <input
                 type="text"
@@ -89,7 +88,6 @@ export const Contact = (props) => {
                 required
               />
             </div>
-            {/* Message textarea below */}
             <textarea
               name="message"
               placeholder="your message"
@@ -97,7 +95,6 @@ export const Contact = (props) => {
               onChange={handleChange}
               required
             />
-            {/* Submit Button */}
             <div className="button">
               <button type="submit">send me an email!</button>
             </div>
