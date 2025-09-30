@@ -227,7 +227,7 @@ h4 {
   display: flex;
   justify-content: center; 
   flex-direction: column; 
-  width: 60%;
+  width: 70%;
   font-size: 21px;
   margin: 0 auto;
 }
@@ -255,7 +255,7 @@ h4 {
 
 .about .image-container {
   width: 30%; 
-  height: 300px; 
+  height: 450px; 
   overflow: hidden; 
   margin-bottom: 20px; 
   padding-right: 20px;
@@ -472,4 +472,53 @@ h4 {
 
 footer {
   padding-bottom: 0px !important;
+}
+
+/* REFLECTIVE TEXT EFFECT */
+
+/*custom reflective text properties we will use in the whole doc*/
+:root {
+  --spot-radius: 160px;
+  --shine-scale: 300%;
+  --shine-angle: 12deg;
+  --shine-opacity: 0.95;
+}
+
+/* base text styling */
+.reflective {
+  font-size: 100px;
+  font-weight: 800;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  background-image: linear-gradient(
+    90deg,
+    #aaa,
+    #eee 30%,
+    #ccc 70%,
+    #888
+  );
+
+    /* positioning of the reflection on the text*/
+    background-size: var(--shine-scale) var(--shine-scale);
+    background-position: calc(var(--mx, 50%)) calc(var(--my, 50%));
+}
+
+/* the spotlight mask that will only cover a circular portion of the text where cursor is */
+.reflective {
+  mask-image: 
+    radial-gradient(
+      circle var(--spot-radius) at var(--mx, 50%) var(--my, 50%),
+      #000 0%, #000 60%, transparent 75%
+    );
+    mask-mode: match-source;
+    mask-repeat: no-repeat;
+
+    -webkit-mask-image: 
+      radial-gradient(
+        circle var(--spot-radius) at var(--mx, 50%) var(--my, 50%),
+      #000 0%, #000 60%, transparent 75%
+      );
+    -webkit-mask-repeat: no-repeat;
 }
