@@ -2,16 +2,32 @@ import React from 'react';
 import { useState, useEffect } from "react";
 import logo from "../assets/f1.jpeg";
 
+function reflectiveText() {
+  const elements = document.querySelectorAll("[data-reflect]");
+  if (!elements.length) return;
+
+  for (const element of elements) {
+    element.addEventListener('mousemove', (event) => {
+      const rect = element.getBoundingClientRect();
+      const mx = event.clientX - rect.left;
+      const my = event.clientY - rect.top;
+      element.style.setProperty("--mx", `${mx}px`);
+      element.style.setProperty("--my", `${my}px`);
+    });
+  }
+}
+
 const Home = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(200 - Math.random() * 100);
     const [index, setIndex] = useState(1);
-    const toRotate = [ "software engineering student", "web developer", "game developer" ];
+    const toRotate = [ "software engineering new graduate", "web developer", "iOS app developer", "unity game developer" ];
     const period = 2000;
-
+    
     useEffect(() => {
+        reflectiveText();
         let ticker = setInterval(() => {
           tick();
         }, delta);
@@ -48,8 +64,8 @@ const Home = () => {
     <section className="home" id="home">
         <div className="content">
             <div className="text-container">
-                <span className="tagline">welcome to my portfolio!</span>
-                <h1 className="">{`hi, my name is Isabelle. I am a `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Software Engineering Student", "Web Developer", "Game Developer" ]'><span className="wrap">{text}</span></span></h1>
+                <span className="tagline" data-reflect>HI, I'M ISABELLE!</span>
+                <h1 className="">{`I am a `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Software Engineering New Graduate", "Web Developer", "iOS App Developer", "Unity Game Developer" ]'><span className="wrap">{text}</span></span></h1>
             </div>
             <div className="image-container">
               <img src={logo}></img>
