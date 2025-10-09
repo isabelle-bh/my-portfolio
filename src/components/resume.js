@@ -12,6 +12,10 @@ const Resume = () => {
   return (
     <section className="resume">
       <h2 className="tagline">check out my resume and experience!</h2>
+      <p>
+        For my contact information, please send me an email through this form {' '}
+        <a href="https://isabelle-bh.github.io/my-portfolio/contact">here</a>.
+      </p>
       <div className="resume-content">
         {isError ? (
           <div>
